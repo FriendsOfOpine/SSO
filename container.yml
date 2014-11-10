@@ -1,1 +1,6 @@
-services:
+imports:
+    - 'src/SSO/container.yml'
+    - 'vendor/opine/config/package-container.yml'
+    - 'vendor/opine/pubsub/package-container.yml'
+    - 'vendor/opine/route/package-container.yml'
+    - 'vendor/opine/cache/package-container.yml'

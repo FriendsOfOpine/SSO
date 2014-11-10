@@ -1,0 +1,20 @@
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:31+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:31+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.5.12-2ubuntu4.1
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:31+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.2.2
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:31+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:31+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.5.12-2ubuntu4.1
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:31+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.2.2
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:55+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:55+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.5.12-2ubuntu4.1
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.2.2
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:55+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:55+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.5.12-2ubuntu4.1
+INFO -- 127.0.0.1 -- 2014-11-10T17:46:55+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.2.2
+INFO -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Enter Hybrid_Auth::initialize()
+INFO -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth::initialize(). PHP version: 5.5.12-2ubuntu4.1
+INFO -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth version: 2.2.2
+INFO -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth::initialize(). Hybrid_Auth called from: http://localhost/
+DEBUG -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth initialize. dump used config:  -- a:8:{s:8:"base_url";s:36:"http://mywebsite/path/to/hybridauth/";s:9:"providers";a:1:{s:8:"Facebook";a:3:{s:7:"enabled";b:1;s:4:"keys";a:2:{s:2:"id";s:0:"";s:6:"secret";s:0:"";}s:5:"scope";s:50:"email, user_about_me, user_birthday, user_hometown";}}s:10:"debug_mode";b:1;s:10:"debug_file";s:56:"/home/ryan/Projects/opine/SSO/config/../cache/ha-log.txt";s:9:"path_base";s:77:"/home/ryan/Projects/opine/SSO/vendor/hybridauth/hybridauth/hybridauth/Hybrid/";s:14:"path_libraries";s:88:"/home/ryan/Projects/opine/SSO/vendor/hybridauth/hybridauth/hybridauth/Hybrid/thirdparty/";s:14:"path_resources";s:87:"/home/ryan/Projects/opine/SSO/vendor/hybridauth/hybridauth/hybridauth/Hybrid/resources/";s:14:"path_providers";s:87:"/home/ryan/Projects/opine/SSO/vendor/hybridauth/hybridauth/hybridauth/Hybrid/Providers/";}
+DEBUG -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth initialize. dump current session:  -- 
+INFO -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth initialize: check if any error is stored on the endpoint...
+INFO -- 127.0.0.1 -- 2014-11-10T17:47:27+00:00 -- Hybrid_Auth initialize: no error found. initialization succeed.

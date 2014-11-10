@@ -1,6 +1,6 @@
 <?php
 /**
- * Foo\SSO
+ * Foo\SSO\Service
  *
  * Copyright (c)2013, 2014 Ryan Mahoney, https://github.com/Opine-Org <ryan@virtuecenter.com>
  *
@@ -22,7 +22,25 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-namespace Foo;
+namespace Foo\SSO;
+use Hybrid_Auth;
 
-class SSO {
+class Service {
+    private $hybridauth = false;
+
+    public function __construct ($config) {
+        $ssoConfig = $config->sso;
+        if (!is_array($ssoConfig)) {
+            $ssoConfig = [];
+        }
+        $this->hybridauth = new Hybrid_Auth($ssoConfig);
+    }
+
+    public function instanceGet () {
+        return $this->hybridauth;
+    }
+
+    public function authenticate ($provider) {
+        $this->hybridauth->
+    }
 }

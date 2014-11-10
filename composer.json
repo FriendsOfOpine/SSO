@@ -16,9 +16,21 @@
     "require": {
         "php": ">=5.4.0",
         "phpunit/phpunit": "3.7.32",
-        "hybridauth/hybridauth": "2.2.2"
+        "hybridauth/hybridauth": "2.2.2",
+        "opine/config": "dev-master",
+        "opine/container": "dev-master",
+        "opine/pubsub": "dev-master",
+        "opine/route": "dev-master",
+        "opine/cache": "dev-master"
     },
     "autoload": {
-        "psr-4": {"Opine\\": "src/"}
+        "classmap": [
+            "src/SSO/forms",
+            "src/SSO/controllers",
+            "src/SSO/views",
+            "src/SSO/models",
+            "src/Service.php",
+            "src/SSO/Route.php"
+        ]
     }
 }
