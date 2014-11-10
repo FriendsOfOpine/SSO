@@ -25,7 +25,6 @@
     },
     "autoload": {
         "classmap": [
-            "src/SSO/forms",
             "src/SSO/controllers",
             "src/SSO/views",
             "src/SSO/models",
