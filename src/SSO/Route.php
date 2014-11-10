@@ -9,6 +9,7 @@ class Route {
     }
 
     public function paths () {
+        $this->route->get('/sso', 'ssoController@redirect');
         $this->route->get('/sso/{provider}', 'ssoController@authenticateHTML');
         $this->route->get('/api/sso/{provider}', 'ssoController@authenticateJSON');
     }

@@ -14,6 +14,10 @@ class Controller {
         $this->view = $view;
     }
 
+    public function redirect () {
+        var_dump($_REQUEST);
+    }
+
     public function authenticateHTML ($provider) {
         $this->authenticate($provider);
     }
@@ -25,6 +29,8 @@ class Controller {
     private function authenticate ($provider) {
         $adapter = $this->service->authenticate($provider);
         $profile = $adapter->getUserProfile();
+        var_dump($profile);
+        exit;
         $context = [
             'profile' => $profile
         ];

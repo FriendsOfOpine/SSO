@@ -41,6 +41,6 @@ class Service {
     }
 
     public function authenticate ($provider) {
-        $this->hybridauth->
+        return $this->hybridauth->authenticate($provider);
     }
 }
