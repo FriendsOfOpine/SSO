@@ -24,6 +24,7 @@
  */
 namespace Foo\SSO;
 use Hybrid_Auth;
+use Hybrid_Endpoint;
 
 class Service {
     private $hybridauth = false;
@@ -42,5 +43,9 @@ class Service {
 
     public function authenticate ($provider) {
         return $this->hybridauth->authenticate($provider);
+    }
+
+    public function endpoint () {
+        Hybrid_Endpoint::process();
     }
 }
