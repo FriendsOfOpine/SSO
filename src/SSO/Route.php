@@ -12,4 +12,8 @@ class Route {
         $this->route->get('/sso/{provider}', 'ssoController@authenticateHTML');
         $this->route->get('/api/sso/{provider}', 'ssoController@authenticateJSON');
     }
+
+    public static function location () {
+        return __DIR__;
+    }
 }
