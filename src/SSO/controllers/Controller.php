@@ -18,20 +18,13 @@ class Controller {
         $this->service->endpoint();
     }
 
-    public function authenticateHTML ($provider) {
-        $this->authenticate($provider);
-    }
-
-    public function authenticateJSON ($provider) {
-        $this->authenticate($provider);
-    }
-
-    private function authenticate ($provider) {
+    public function authenticate ($provider) {
         $adapter = $this->service->authenticate($provider);
         $profile = $adapter->getUserProfile();
         $context = [
-            'profile' => $profile
+            'profile' => $profile,
+            'provider' => $provider
         ];
-        $this->topic->publish('sso-login', $context);
+        $this->topic->publish('sso-authenticate', $context);
     }
 }

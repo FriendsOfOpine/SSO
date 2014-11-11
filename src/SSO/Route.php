@@ -10,8 +10,7 @@ class Route {
 
     public function paths () {
         $this->route->get('/sso', 'ssoController@endpoint');
-        $this->route->get('/sso/{provider}', 'ssoController@authenticateHTML');
-        $this->route->get('/api/sso/{provider}', 'ssoController@authenticateJSON');
+        $this->route->get('/sso/{provider}', 'ssoController@authenticate');
     }
 
     public static function location () {

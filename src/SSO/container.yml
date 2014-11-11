@@ -10,5 +10,6 @@ services:
         arguments: ['@ssoService', '@topic', '@ssoModel', '@ssoView']
     ssoModel:
         class:     'Foo\SSO\Model'
+        arguments: ['@person']
     ssoView:
         class:     'Foo\SSO\View'
