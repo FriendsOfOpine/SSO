@@ -1,1 +1,2 @@
-SSO
+Single Sign-On Bundle
+=====================

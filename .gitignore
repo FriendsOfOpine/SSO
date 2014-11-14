@@ -1,5 +1,5 @@
 /vendor
 /composer.lock
 /report
-/config/ha-log.txt
-/config/config.json
+/cache/ha-log.txt
+/cache/config.json
