@@ -14,16 +14,19 @@
         }
     ],
     "require": {
-        "php": ">=5.4.0",
-        "phpunit/phpunit": "3.7.32",
+        "php": ">=5.5.0",
         "hybridauth/hybridauth": "2.2.2",
         "codeguy/upload": "dev-master",
-        "opine/config": "dev-master",
-        "opine/container": "dev-master",
         "opine/pubsub": "dev-master",
         "opine/route": "dev-master",
-        "opine/cache": "dev-master",
-        "opine/person": "dev-master"
+        "opine/person": "dev-master",
+        "opine/interfaces": "dev-master"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.32",
+        "opine/config": "dev-master",
+        "opine/container": "dev-master",
+        "opine/cache": "dev-master"
     },
     "autoload": {
         "classmap": [
