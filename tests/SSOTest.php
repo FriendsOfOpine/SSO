@@ -14,7 +14,7 @@ class SSOTest extends PHPUnit_Framework_TestCase {
         $root = __DIR__ . '/../public';
         $this->config = new Config($root);
         $this->config->cacheSet();
-        $container = new Container($root, $this->config, $root . '/../container.yml');
+        $container = Container::instance($root, $this->config, $root . '/../config/container.yml');
         $this->service = $container->get('ssoService');
     }
 

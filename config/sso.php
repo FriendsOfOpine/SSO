@@ -1,6 +1,6 @@
 <?php
 return [
-    'base_url' => 'http://mywebsite/path/to/hybridauth/', 
+    'base_url' => 'http://mywebsite/path/to/hybridauth/',
     'providers' => [
         'Facebook' => [
             'enabled' => true,
@@ -8,6 +8,6 @@ return [
             'scope' => 'email, user_about_me, user_birthday, user_hometown'
         ]
     ],
-    'debug_mode' => true, 
-    'debug_file' => __DIR__ . '/../cache/ha-log.txt'
-]; 
+    'debug_mode' => true,
+    'debug_file' => __DIR__ . '/../var/cache/ha-log.txt'
+];

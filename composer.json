@@ -30,11 +30,11 @@
     },
     "autoload": {
         "classmap": [
-            "src/SSO/controllers",
-            "src/SSO/views",
-            "src/SSO/models",
+            "src/SSO/app/controllers",
+            "src/SSO/app/views",
+            "src/SSO/app/models",
             "src/Service.php",
-            "src/SSO/Route.php"
+            "src/SSO/app/Route.php"
         ]
     }
 }

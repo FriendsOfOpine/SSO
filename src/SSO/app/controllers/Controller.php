@@ -1,6 +1,8 @@
 <?php
 namespace Foo\SSO;
 
+use ArrayObject;
+
 class Controller {
     private $service;
     private $topic;
@@ -21,10 +23,10 @@ class Controller {
     public function authenticate ($provider) {
         $adapter = $this->service->authenticate($provider);
         $profile = $adapter->getUserProfile();
-        $context = [
+        $context = new ArrayObject([
             'profile' => $profile,
             'provider' => $provider
-        ];
+        ]);
         $this->topic->publish('sso-authenticate', $context);
     }
 }
