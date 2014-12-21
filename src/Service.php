@@ -30,11 +30,10 @@ class Service {
     private $hybridauth = false;
 
     public function __construct ($config) {
-        $ssoConfig = $config->sso;
-        if (!is_array($ssoConfig)) {
-            $ssoConfig = [];
+        if (!is_array($config)) {
+            $config = [];
         }
-        $this->hybridauth = new Hybrid_Auth($ssoConfig);
+        $this->hybridauth = new Hybrid_Auth($config);
     }
 
     public function instanceGet () {

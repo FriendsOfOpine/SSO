@@ -1,0 +1,4 @@
+route:
+    GET:
+        /sso:               ssoController@endpoint
+        /sso/{provider}:    ssoController@authenticate

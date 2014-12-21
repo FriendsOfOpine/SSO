@@ -1,15 +1,15 @@
 services:
     ssoService:
-        class:     'Foo\SSO\Service'
-        arguments: ['@config']
+        class:     Foo\SSO\Service
+        arguments: [config.sso]
     ssoRoute:
-        class:     'Foo\SSO\Route'
-        arguments: ['@route']
+        class:     Foo\SSO\Route
+        arguments: [@route]
     ssoController:
-        class:     'Foo\SSO\Controller'
-        arguments: ['@ssoService', '@topic', '@ssoModel', '@ssoView']
+        class:     Foo\SSO\Controller
+        arguments: [@ssoService, @topic, @ssoModel, @ssoView]
     ssoModel:
-        class:     'Foo\SSO\Model'
-        arguments: ['@person']
+        class:     Foo\SSO\Model
+        arguments: [@person]
     ssoView:
-        class:     'Foo\SSO\View'
+        class:     Foo\SSO\View
