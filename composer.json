@@ -18,7 +18,7 @@
         "hybridauth/hybridauth": "2.2.2",
         "codeguy/upload": "dev-master",
         "opine/pubsub": "dev-master",
-        "opine/route": "dev-master",
+        "opine/route": "3.0.1",
         "opine/person": "dev-master",
         "opine/interfaces": "dev-master"
     },
