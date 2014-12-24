@@ -1,0 +1,9 @@
+settings:
+    base_url: http://mywebsite/path/to/hybridauth/
+    providers:
+        Facebook:
+            enabled:true,
+            keys:
+                id: xxx
+                secret: xxx
+            scope: "email, user_about_me, user_birthday, user_hometown"
